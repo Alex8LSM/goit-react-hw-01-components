@@ -1,0 +1,15 @@
+.transaction-history {
+  width: 100%;
+  text-align: center;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3);
+}
+.header {
+  background-color: cadetblue;
+}
+.tbody {
+  background-color: lightcyan;
+}
+.thead {
+  padding: 8px;
+  text-transform: uppercase;
+}

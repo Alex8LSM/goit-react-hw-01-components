@@ -1,6 +1,7 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
+import './Profile.css';
 const Profile = ({
-  name,
+  username,
   tag,
   location,
   avatar,
@@ -10,7 +11,7 @@ const Profile = ({
     <div className="profile">
       <div className="description">
         <img src={avatar} alt="User avatar" className="avatar" />
-        <p className="name">{name}</p>
+        <p className="name">{username}</p>
         <p className="tag">@{tag}</p>
         <p className="location">{location}</p>
       </div>

@@ -7,12 +7,11 @@ import friends from './FriendList/friends';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
 import transactions from './TransactionHistory/transactions';
 
-
 export const App = () => {
   return (
     <div>
       <h2>Task 1</h2>
-      <div>
+      <div className="container">
         <Profile
           username={user.username}
           tag={user.tag}
@@ -22,14 +21,16 @@ export const App = () => {
         />
       </div>
       <h2>Task 2</h2>
-      <div>
+      <div className="container">
         <Statistics title="Upload stats" stats={data} />
         <Statistics stats={data} />
       </div>
       <h2>Task 3</h2>
-      <div><FriendList friends={friends} /></div>
+      <div className="container">
+        <FriendList friends={friends} />
+      </div>
       <h2>Task 4</h2>
-      <div>
+      <div className="container">
         <TransactionHistory items={transactions} />
       </div>
     </div>
