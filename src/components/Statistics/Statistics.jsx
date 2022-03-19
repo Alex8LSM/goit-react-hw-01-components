@@ -10,7 +10,6 @@ const Statistics = ({ title, stats }) => {
       {title && <h2 className="title">{title}</h2>}
       <ul className="stat-list">
         {stats.map(stat => (
-          // {{ const newColor = getRandomHexColor()}}
           <li
             className="item"
             key={stat.id}
