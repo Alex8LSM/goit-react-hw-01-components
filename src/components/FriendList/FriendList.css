@@ -1,7 +1,3 @@
-.friend-list > .item {
-  display: flex;
-  align-items: start;
-}
 .list {
   border: solid 1px lightgrey;
   display: flex;
