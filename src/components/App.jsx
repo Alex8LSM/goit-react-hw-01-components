@@ -1,11 +1,11 @@
-import Profile from './Profile';
-import user from './user';
-import Statistics from './Statistics';
-import data from './data';
-import FriendList from './FriendList';
-import friends from './friends';
-import TransactionHistory from './TransactionHistory';
-import transactions from './transactions';
+import Profile from './Profile/Profile';
+import user from './Profile/user';
+import Statistics from './Statistics/Statistics';
+import data from './Statistics/data';
+import FriendList from './FriendList/FriendList';
+import friends from './FriendList/friends';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
+import transactions from './TransactionHistory/transactions';
 
 
 export const App = () => {
@@ -24,13 +24,13 @@ export const App = () => {
       <h2>Task 2</h2>
       <div>
         <Statistics title="Upload stats" stats={data} />
-        {/* <Statistics stats={data} /> */}
+        <Statistics stats={data} />
       </div>
       <h2>Task 3</h2>
       <div><FriendList friends={friends} /></div>
       <h2>Task 4</h2>
       <div>
-        <TransactionHistory items={transactions} />;
+        <TransactionHistory items={transactions} />
       </div>
     </div>
   );
