@@ -1,9 +1,6 @@
 import PropTypes from 'prop-types';
 import './Statistics.css';
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-}
-
+import getRandomHexColor from 'helpers/RandomColor';
 const Statistics = ({ title, stats }) => {
   return (
     <section className="statistics">
